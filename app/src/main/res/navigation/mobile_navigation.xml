@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/productsList">
+    <fragment
+        android:id="@+id/productsList"
+        android:name="com.example.simpleproducts.ui.ProductsList"
+        android:label="Продукты компании"
+        tools:layout="@layout/fragment_products_list" >
+        <action
+            android:id="@+id/action_to_about"
+            app:destination="@id/about" />
+        <action
+            android:id="@+id/action_productsList_to_productDescription"
+            app:destination="@id/productDescription" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.simpleproducts.ui.About"
+        android:label="О компании"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_to_about"
+            app:destination="@id/about" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDescription"
+        android:name="com.example.simpleproducts.ui.ProductDescription"
+        android:label="О товаре"
+        tools:layout="@layout/fragment_product_description" >
+        <action
+            android:id="@+id/action_to_about"
+            app:destination="@id/about" />
+    </fragment>
+</navigation>

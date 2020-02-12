@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimpleProducts</string>
+    <string name="company_name">О компании</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ask">Перейти по ссылке?</string>
+    <string name="ok">OK</string>
+    <string name="cansel">Отмена</string>
+    <string name="atb_url">https://www.atbmarket.com/</string>
+</resources>
