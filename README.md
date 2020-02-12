@@ -1,2 +1,0 @@
-# SimpleProducts
-Information app
